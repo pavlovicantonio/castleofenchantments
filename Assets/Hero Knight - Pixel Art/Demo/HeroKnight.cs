@@ -135,7 +135,7 @@ public class HeroKnight : MonoBehaviour
             m_animator.SetBool("IdleBlock", false);
 
 
-        else if (Input.GetKeyDown("left shift") && !m_rolling && !m_isWallSliding)
+        else if (Input.GetKeyDown(KeyCode.S) && !m_rolling && !m_isWallSliding)
         {
             m_rolling = true;
             m_animator.SetTrigger("Roll");
@@ -144,7 +144,7 @@ public class HeroKnight : MonoBehaviour
 
 
 
-        else if (Input.GetKeyDown("space") && m_grounded && !m_rolling)
+        else if ((Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.W)) && m_grounded && !m_rolling)
         {
             m_animator.SetTrigger("Jump");
             m_grounded = false;
