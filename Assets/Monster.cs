@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Enemy4 : MonoBehaviour
+public class Monster : MonoBehaviour
 {
     public float jumpForce = 5f;
     public float jumpInterval = 2f;
@@ -30,3 +30,4 @@ public class Enemy4 : MonoBehaviour
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 }
+

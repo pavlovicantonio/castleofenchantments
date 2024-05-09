@@ -133,15 +133,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1873030402443433276, guid: 332b21a684312b34798ace98affe4eed, type: 3}
       propertyPath: m_LocalScale.x
-      value: -0.89
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1873030402443433276, guid: 332b21a684312b34798ace98affe4eed, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.89
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1873030402443433276, guid: 332b21a684312b34798ace98affe4eed, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.89
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1873030402443433276, guid: 332b21a684312b34798ace98affe4eed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -149,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1873030402443433276, guid: 332b21a684312b34798ace98affe4eed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.92
+      value: -11.62
       objectReference: {fileID: 0}
     - target: {fileID: 1873030402443433276, guid: 332b21a684312b34798ace98affe4eed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -183,9 +183,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1873030402443433276, guid: 332b21a684312b34798ace98affe4eed, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7041806645088666966, guid: 332b21a684312b34798ace98affe4eed, type: 3}
       propertyPath: m_Name
       value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009503652208225780, guid: 332b21a684312b34798ace98affe4eed, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.0460637
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009503652208225780, guid: 332b21a684312b34798ace98affe4eed, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.3935087
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009503652208225780, guid: 332b21a684312b34798ace98affe4eed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.6393
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009503652208225780, guid: 332b21a684312b34798ace98affe4eed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1472
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -379,7 +399,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.49, y: 0.25, z: -10}
+  m_LocalPosition: {x: 2.61, y: -2.47, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -399,7 +419,7 @@ GameObject:
   - component: {fileID: 529013697}
   - component: {fileID: 529013696}
   m_Layer: 0
-  m_Name: Enemy4
+  m_Name: BlackMonster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -414,7 +434,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 529013695}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7aeb65b99f542b4287bc9664a713e9f, type: 3}
+  m_Script: {fileID: 11500000, guid: c11d1d34c2f5b6c47af9178a5a3daa12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 6
@@ -617,7 +637,7 @@ GameObject:
   - component: {fileID: 1092517558}
   - component: {fileID: 1092517562}
   m_Layer: 0
-  m_Name: Enemy2
+  m_Name: SkeletonLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -771,7 +791,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1092517557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc36ceaab53660d4d871cd6d837d079d, type: 3}
+  m_Script: {fileID: 11500000, guid: 95fc60a8410e3dd45a77b382bd440697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1832897343}
@@ -795,7 +815,7 @@ GameObject:
   - component: {fileID: 1618144131}
   - component: {fileID: 1618144133}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: SkeletonRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7162,7 +7182,7 @@ GameObject:
   - component: {fileID: 1871441633}
   - component: {fileID: 1871441632}
   m_Layer: 0
-  m_Name: Enemy3
+  m_Name: BlueMonster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
