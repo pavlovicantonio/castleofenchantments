@@ -1,0 +1,1337 @@
+fileFormatVersion: 2
+guid: d7e9658a56597344cac5cab91b88ac7d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_0
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 477
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fe6a36665bcbb448673341dbc35042
+      internalID: 1298263783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 505
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09047890fc7487e4ba69084307426651
+      internalID: -2118989144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_2
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 475
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec234041bddcff4aa25e0f353bd76d6
+      internalID: 1398351359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_3
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 437
+        width: 166
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ba06eaea8c90a48b0f1190c4bc98e9
+      internalID: -2147345794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_4
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 484
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97618d7885633d49b84e897f7753cc9
+      internalID: 1522762709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_5
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 451
+        width: 101
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ff11d6d13c3a24aa64c1d25cf7eb35
+      internalID: 171626265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_6
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 446
+        width: 101
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee569e459fcaf7745a4ac2c4c0dd4bcd
+      internalID: 249514050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_7
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 459
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00df393dd525e114f91e26772e50284b
+      internalID: 816997004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_8
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 441
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbe0e895c865214ca78ffa1a72476c9
+      internalID: -953426063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 435
+        width: 118
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abd13bb177708b4d96a247f9eb1c03b
+      internalID: 375686181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 212
+        width: 95
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a009fd8db87b2864b9c274b51b35968c
+      internalID: 750492711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 212
+        width: 63
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f72f2c717f5a24eb1b98c59f3f1767
+      internalID: 869238061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_12
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 214
+        width: 96
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5aaf755cf3adf41a70417b98675a83
+      internalID: 1030563190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_13
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 217
+        width: 64
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e65ebd3e8d2fd44b85a2dc75d87fd5d
+      internalID: -563931183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_14
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 342
+        width: 123
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7532a69d4c569479d48b3ff6006252
+      internalID: 1574953037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_15
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 217
+        width: 160
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c867a9247d48ed44c9a89a120b8f48b8
+      internalID: -2067478777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_16
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 299
+        width: 127
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dba0318cf139cd4891d84385c227327
+      internalID: 124271953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_17
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 205
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60582cb85c5fc33409f0d45c611051cc
+      internalID: -1955401723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_18
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 214
+        width: 7
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d967f253f4224374186752baf1f7b05a
+      internalID: 1515475628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_19
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 225
+        width: 4
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8cc53ec824afe4d94989b7b771d603
+      internalID: 773002575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_20
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 214
+        width: 14
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a28b579f7508a498a1a17c3e9b67d7
+      internalID: -1551658235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_21
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 225
+        width: 5
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1500e72ba6d11bb4f9ff74c71cab2bdd
+      internalID: -1875525819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_22
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 225
+        width: 5
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd037544eaff4844d853e5ef4d3f9fa6
+      internalID: 701014074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_23
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 214
+        width: 13
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd64f96e3d516c46bdfe68c646fb1e9
+      internalID: 1830894209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_24
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 166
+        width: 69
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14636b225e7bfb8408fcdd63e8752ea3
+      internalID: -416152218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_25
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 158
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fb2ac4e3219834896f1ff23bc01aa7
+      internalID: 908351626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_26
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 158
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8596a070bfbd6ea448eae29e2c3d3b72
+      internalID: 2141754373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_27
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 158
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e0c1b05c09ce64fb12855ec64164c9
+      internalID: -129145940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_28
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 158
+        width: 5
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8f8725d74f36d4ba2c3f1a428f2673
+      internalID: -2023557218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_29
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 165
+        width: 69
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed25531664d32543b62c9fca2de3b65
+      internalID: -755056391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_30
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 162
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d4d4f91c7e2584a9c46ea7547f0d22
+      internalID: -254040638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_31
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 162
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8089230aa820a4b8267582c6a2e686
+      internalID: 337529111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_32
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 134
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e7f29bf2ea00044ba2679a85d599f7
+      internalID: 1133456380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_33
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 134
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ff0aa58028b0646a0e1a4d4a6f7027
+      internalID: 1752301176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_34
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 131
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9396cbe257da0348861a24429fb4f2c
+      internalID: 438695364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_35
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 131
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d90795ce68219489917dbcaed28df8
+      internalID: -1422762114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 45
+        width: 26
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3bf2f485ce8a14ea14d07b2aa852d8
+      internalID: 1356723844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_37
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 45
+        width: 51
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcc267ca4e86374da3a2261c0906a01
+      internalID: -764823585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_38
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 45
+        width: 26
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb084c78064fe224c8d68e6a5a6f5612
+      internalID: -1786436426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_39
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 45
+        width: 71
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bf321ca8953174084b5dcc01cd3df1
+      internalID: -155544470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_40
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 19
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd09b32e30278ca49a5a285806acc64c
+      internalID: 1715425377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_41
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 45
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc4b9ca58cc9df489771ea7d1ad4b02
+      internalID: -944555852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_42
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 45
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a618a3ae1392334aa8713888e3cf1fa
+      internalID: -1595251014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_43
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 45
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334881392543f1a4c86f883d99c10868
+      internalID: -1882782160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_44
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 45
+        width: 29
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea051ed53858f74387e4f41378609a7
+      internalID: 1923111283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_45
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 45
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d038b55ee504c6f49a59d59403c25ad2
+      internalID: -1974762870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_46
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 45
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b684784f6336cae41978f1b1791eab51
+      internalID: -1977242221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_47
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 43
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b16187fa6ffc14d9cdc864c1db5b83
+      internalID: -2048388002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_48
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 43
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275d423df4dffd24c98e95a602795549
+      internalID: -1771194471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_49
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 43
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee385be033b79a4b8b9833a0e16fca8
+      internalID: 595099220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_50
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 13
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ba75bc9ca5e0345a97dc924ea32423
+      internalID: 574488984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_51
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 13
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314f6e60556539e4cb12b3a9c2abe82a
+      internalID: -1640032926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_52
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 13
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1438a88b61bc5d24da725ffd71f42829
+      internalID: -1687273827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_53
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 13
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2b6b18cfb31ce498c886e00e77bb37
+      internalID: -1508235208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ftpb_danielversion3_Gimped.png_54
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 13
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0b283a795a10849b785ff3ca35bbaf
+      internalID: -1237353989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ftpb_danielversion3_Gimped.png_0: 1298263783
+      ftpb_danielversion3_Gimped.png_1: -2118989144
+      ftpb_danielversion3_Gimped.png_10: 750492711
+      ftpb_danielversion3_Gimped.png_11: 869238061
+      ftpb_danielversion3_Gimped.png_12: 1030563190
+      ftpb_danielversion3_Gimped.png_13: -563931183
+      ftpb_danielversion3_Gimped.png_14: 1574953037
+      ftpb_danielversion3_Gimped.png_15: -2067478777
+      ftpb_danielversion3_Gimped.png_16: 124271953
+      ftpb_danielversion3_Gimped.png_17: -1955401723
+      ftpb_danielversion3_Gimped.png_18: 1515475628
+      ftpb_danielversion3_Gimped.png_19: 773002575
+      ftpb_danielversion3_Gimped.png_2: 1398351359
+      ftpb_danielversion3_Gimped.png_20: -1551658235
+      ftpb_danielversion3_Gimped.png_21: -1875525819
+      ftpb_danielversion3_Gimped.png_22: 701014074
+      ftpb_danielversion3_Gimped.png_23: 1830894209
+      ftpb_danielversion3_Gimped.png_24: -416152218
+      ftpb_danielversion3_Gimped.png_25: 908351626
+      ftpb_danielversion3_Gimped.png_26: 2141754373
+      ftpb_danielversion3_Gimped.png_27: -129145940
+      ftpb_danielversion3_Gimped.png_28: -2023557218
+      ftpb_danielversion3_Gimped.png_29: -755056391
+      ftpb_danielversion3_Gimped.png_3: -2147345794
+      ftpb_danielversion3_Gimped.png_30: -254040638
+      ftpb_danielversion3_Gimped.png_31: 337529111
+      ftpb_danielversion3_Gimped.png_32: 1133456380
+      ftpb_danielversion3_Gimped.png_33: 1752301176
+      ftpb_danielversion3_Gimped.png_34: 438695364
+      ftpb_danielversion3_Gimped.png_35: -1422762114
+      ftpb_danielversion3_Gimped.png_36: 1356723844
+      ftpb_danielversion3_Gimped.png_37: -764823585
+      ftpb_danielversion3_Gimped.png_38: -1786436426
+      ftpb_danielversion3_Gimped.png_39: -155544470
+      ftpb_danielversion3_Gimped.png_4: 1522762709
+      ftpb_danielversion3_Gimped.png_40: 1715425377
+      ftpb_danielversion3_Gimped.png_41: -944555852
+      ftpb_danielversion3_Gimped.png_42: -1595251014
+      ftpb_danielversion3_Gimped.png_43: -1882782160
+      ftpb_danielversion3_Gimped.png_44: 1923111283
+      ftpb_danielversion3_Gimped.png_45: -1974762870
+      ftpb_danielversion3_Gimped.png_46: -1977242221
+      ftpb_danielversion3_Gimped.png_47: -2048388002
+      ftpb_danielversion3_Gimped.png_48: -1771194471
+      ftpb_danielversion3_Gimped.png_49: 595099220
+      ftpb_danielversion3_Gimped.png_5: 171626265
+      ftpb_danielversion3_Gimped.png_50: 574488984
+      ftpb_danielversion3_Gimped.png_51: -1640032926
+      ftpb_danielversion3_Gimped.png_52: -1687273827
+      ftpb_danielversion3_Gimped.png_53: -1508235208
+      ftpb_danielversion3_Gimped.png_54: -1237353989
+      ftpb_danielversion3_Gimped.png_6: 249514050
+      ftpb_danielversion3_Gimped.png_7: 816997004
+      ftpb_danielversion3_Gimped.png_8: -953426063
+      ftpb_danielversion3_Gimped.png_9: 375686181
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
