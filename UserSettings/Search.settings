@@ -8,9 +8,18 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+<<<<<<< Updated upstream
 	"last_search.3BE40471" = ""
 	"OpenInspectorPreview.3BE40471" = "0"
 	"currentGroup.3BE40471" = "all"
+=======
+<<<<<<< HEAD
+=======
+	"last_search.3BE40471" = ""
+	"OpenInspectorPreview.3BE40471" = "0"
+	"currentGroup.3BE40471" = "all"
+>>>>>>> cfd3aef44aa3e83ff20e2dd3d574d0f2c66ea16a
+>>>>>>> Stashed changes
 }
 providers = {
 	packages = {
