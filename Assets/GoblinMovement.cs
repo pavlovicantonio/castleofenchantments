@@ -32,7 +32,7 @@ public class GoblinMovement : MonoBehaviour
 
     private void Move()
     {
-        // Only move in step pattern if not attacking
+
         transform.Translate(Vector2.right * speed * direction * Time.deltaTime);
         stepCounter -= speed * Time.deltaTime;
 
@@ -60,12 +60,11 @@ public class GoblinMovement : MonoBehaviour
 
     private void AttackPlayer()
     {
-        // Change this function to include actual attack logic
-        // Move towards the player
+
         Vector3 directionToPlayer = (player.position - transform.position).normalized;
         transform.Translate(directionToPlayer * speed * Time.deltaTime);
 
-        // Optionally flip the goblin to face the player
+
         if (player.position.x > transform.position.x && direction != 1)
         {
             Flip();
