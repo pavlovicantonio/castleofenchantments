@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoblinMovement : MonoBehaviour
+public class BanditMovement : MonoBehaviour
 {
+
     public float speed = 2f;
     public float stepLength = 2f;
     public float attackRange = 1f;
@@ -63,7 +64,6 @@ public class GoblinMovement : MonoBehaviour
 
         Vector3 directionToPlayer = (player.position - transform.position).normalized;
         transform.Translate(directionToPlayer * speed * Time.deltaTime);
-
 
         if (player.position.x > transform.position.x && direction != 1)
         {
