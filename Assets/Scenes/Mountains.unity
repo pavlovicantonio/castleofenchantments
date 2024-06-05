@@ -668,7 +668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1760925882}
-  parallexEffect: 0
+  parallexEffect: 0.7
 --- !u!212 &165114481
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25434,7 +25434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1760925882}
-  parallexEffect: 0
+  parallexEffect: 0.5
 --- !u!212 &1013399684
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25801,7 +25801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1760925882}
-  parallexEffect: 0
+  parallexEffect: 0.3
 --- !u!212 &1137166098
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26519,7 +26519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1760925882}
-  parallexEffect: 0
+  parallexEffect: 1
 --- !u!212 &1423870301
 SpriteRenderer:
   m_ObjectHideFlags: 0
