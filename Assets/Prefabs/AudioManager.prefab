@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6487442327450822786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579699949666176952}
+  - component: {fileID: 8217767188532078412}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &579699949666176952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487442327450822786}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8217767188532078412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487442327450822786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cbd37bce9befd641a588e2829870f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: PlayerRun
+    clip: {fileID: 8300000, guid: bcf4ca49f470ebf4693e560647aeba54, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: PlayerDirtChainJump
+    clip: {fileID: 8300000, guid: 5e8467b8cfd480444800769c5af3cff4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: PlayerDirtChainLand
+    clip: {fileID: 8300000, guid: b540967587c202d47afb25926abf70ff, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: WallSlide
+    clip: {fileID: 8300000, guid: bc36a80e3f94e1c4ea67c148c2427406, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: PlayerRoll
+    clip: {fileID: 8300000, guid: 0ea5e45935400364596cf1d35ac43a3d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: PlayerHurt
+    clip: {fileID: 8300000, guid: 330cfaf39f81af943a7d3456858d7902, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: PlayerDeath1
+    clip: {fileID: 8300000, guid: 76d6f8c0c8993f841bf47a17d5151aa5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: SwingSword01
+    clip: {fileID: 8300000, guid: 4f7df9c4aaea42c4eb756d26398dbe69, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: PlayerShieldDraw
+    clip: {fileID: 8300000, guid: 384779a5bede4d640ab1170754c8d55c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: TeleportIn
+    clip: {fileID: 8300000, guid: 5f876703fbe75be4e8f6f2a6d270fbec, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: PetRun
+    clip: {fileID: 8300000, guid: 883bb1c470dc6ed40b22077b163f7d68, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: PetTamed
+    clip: {fileID: 8300000, guid: 373df3e50f39f88428d7afe663f7c277, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: PetGrowl
+    clip: {fileID: 8300000, guid: 1d0e2861a888fae4cbc8f794036fa4c1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: Pixel 1
+    clip: {fileID: 8300000, guid: 2ccc481475ec7e54c83a6db01256dace, type: 3}
+    volume: 0.056
+    pitch: 1
+    loop: 0
+    isMusic: 1
+    source: {fileID: 0}
+  - name: Pixel 11
+    clip: {fileID: 8300000, guid: 16c8601e63bd1dd42aba4c5cf4be477e, type: 3}
+    volume: 0.226
+    pitch: 1
+    loop: 1
+    isMusic: 1
+    source: {fileID: 0}
+  - name: Pixel 2
+    clip: {fileID: 8300000, guid: f3775a89bfe330d4aa0739f3da64aacd, type: 3}
+    volume: 0.226
+    pitch: 1
+    loop: 0
+    isMusic: 1
+    source: {fileID: 0}
+  - name: Pixel 4
+    clip: {fileID: 8300000, guid: 3ae6ac071f570bc4ca7bcfbc3beb5d1a, type: 3}
+    volume: 0.226
+    pitch: 1
+    loop: 1
+    isMusic: 1
+    source: {fileID: 0}

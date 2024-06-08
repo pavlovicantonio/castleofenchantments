@@ -44,6 +44,9 @@ public class CompanionAI : MonoBehaviour
     private Collider2D playerCollider;
     private Animator animator;
 
+    // New variable to track the previous state of the tame prompt
+    private bool wasTamePromptActive = false;
+
     public void Start()
     {
         seeker = GetComponent<Seeker>();
@@ -81,16 +84,27 @@ public class CompanionAI : MonoBehaviour
         if (!followEnabled && Vector2.Distance(transform.position, target.position) <= tamingDistance)
         {
             tamePrompt.SetActive(true);
+
+            // Check if the tame prompt was previously inactive
+            if (!wasTamePromptActive)
+            {
+                FindObjectOfType<AudioManager>().Play("PetGrowl"); // Play pet growl sound
+                wasTamePromptActive = true; // Update the state
+            }
+
             if (Input.GetKeyDown(tameKey))
             {
                 isTamed = true; // Tame the companion
                 followEnabled = true; // Follow is enabled
                 tamePrompt.SetActive(false); // Prompt is not visible
+                FindObjectOfType<AudioManager>().Play("PetTamed"); // Play pet tamed sound
+                wasTamePromptActive = false; // Reset the state
             }
         }
         else
         {
             tamePrompt.SetActive(false);
+            wasTamePromptActive = false; // Reset the state if the player moves away
         }
     }
 
@@ -135,6 +149,7 @@ public class CompanionAI : MonoBehaviour
         // Determine if the companion should be running
         bool isRunning = direction.sqrMagnitude > 0.1f;
         animator.SetBool("isRunning", isRunning);
+        FindObjectOfType<AudioManager>().Play("PetRun"); // Play pet run sound
 
         rb.velocity = Vector2.SmoothDamp(rb.velocity, force, ref currentVelocity, 0.5f);
         rb.AddForce(force);

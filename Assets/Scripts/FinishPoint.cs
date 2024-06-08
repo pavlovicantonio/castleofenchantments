@@ -18,6 +18,7 @@ public class FinishPoint : MonoBehaviour
             if (goNextLevel)
             {
                 SceneController.instance.NextLevel();
+                FindObjectOfType<AudioManager>().Play("TeleportIn");    // Play the teleportIn sound
             }
             else
             {
