@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using Unity.VisualScripting;
 
 public class HeroKnight : MonoBehaviour
 {
@@ -113,18 +111,20 @@ public class HeroKnight : MonoBehaviour
         }
 
         else if (Input.GetMouseButtonDown(0) && m_timeSinceAttack > 0.25f && !m_rolling)
-        {
-            m_currentAttack++;
+            {
+                m_currentAttack++;
 
-            if (m_currentAttack > 3)
-                m_currentAttack = 1;
+                if (m_currentAttack > 3)
+                    m_currentAttack = 1;
 
-            if (m_timeSinceAttack > 1.0f)
-                m_currentAttack = 1;
+                if (m_timeSinceAttack > 1.0f)
+                    m_currentAttack = 1;
 
-            m_animator.SetTrigger("Attack" + m_currentAttack);
-            m_timeSinceAttack = 0.0f;
-            FindObjectOfType<AudioManager>().Play("SwingSword01"); // Play SwingSword01 sound
+                m_animator.SetTrigger("Attack" + m_currentAttack);
+                m_timeSinceAttack = 0.0f;
+                FindObjectOfType<AudioManager>().Play("SwingSword01"); // Play SwingSword01 sound
+
+                Debug.Log("Playing sound: SwingSword01"); // Debug info
         }
         else if (Input.GetMouseButtonDown(1) && !m_rolling)
         {
