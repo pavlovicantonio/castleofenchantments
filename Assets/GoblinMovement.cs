@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoblinMovement : MonoBehaviour
+public class GoblinMovement : MonoBehaviour, IDamageable
 {
     public float speed = 2f;
     public float stepLength = 2f;
     public float attackRange = 1f;
     public Transform player;
+    public int health = 6;
 
     private float stepCounter;
     private int direction = 1;
@@ -32,7 +33,6 @@ public class GoblinMovement : MonoBehaviour
 
     private void Move()
     {
-
         transform.Translate(Vector2.right * speed * direction * Time.deltaTime);
         stepCounter -= speed * Time.deltaTime;
 
@@ -60,10 +60,8 @@ public class GoblinMovement : MonoBehaviour
 
     private void AttackPlayer()
     {
-
         Vector3 directionToPlayer = (player.position - transform.position).normalized;
         transform.Translate(directionToPlayer * speed * Time.deltaTime);
-
 
         if (player.position.x > transform.position.x && direction != 1)
         {
@@ -73,6 +71,22 @@ public class GoblinMovement : MonoBehaviour
         {
             Flip();
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        Debug.Log(gameObject.name + " took damage, remaining health: " + health);
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        Debug.Log(gameObject.name + " is dead.");
+        Destroy(gameObject);
     }
 
     private void Flip()
