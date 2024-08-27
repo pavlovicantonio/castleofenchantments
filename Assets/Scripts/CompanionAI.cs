@@ -2,9 +2,15 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.VFX;
+// TODO companion run multiple instances
 public class CompanionAI : MonoBehaviour
 {
+    [Header("Audio")]
+    [SerializeField] private AudioClip companionRunClip;
+    [SerializeField] private AudioClip companionGrowlClip;
+    [SerializeField] private AudioClip companionIsTamedClip;
+
     [Header("Pathfinding")]
     public Transform target;
     public float activateDistance = 100f; // Maximum distance for following the player
@@ -88,7 +94,7 @@ public class CompanionAI : MonoBehaviour
             // Check if the tame prompt was previously inactive
             if (!wasTamePromptActive)
             {
-                FindObjectOfType<AudioManager>().Play("PetGrowl"); // Play pet growl sound
+                SFXManager.instance.PlaySFXClip(companionGrowlClip, transform, 1f);  // Play pet growl sound
                 wasTamePromptActive = true; // Update the state
             }
 
@@ -97,7 +103,7 @@ public class CompanionAI : MonoBehaviour
                 isTamed = true; // Tame the companion
                 followEnabled = true; // Follow is enabled
                 tamePrompt.SetActive(false); // Prompt is not visible
-                FindObjectOfType<AudioManager>().Play("PetTamed"); // Play pet tamed sound
+                SFXManager.instance.PlaySFXClip(companionIsTamedClip, transform, 1f);  // Play pet tamed sound
                 wasTamePromptActive = false; // Reset the state
             }
         }
@@ -149,7 +155,7 @@ public class CompanionAI : MonoBehaviour
         // Determine if the companion should be running
         bool isRunning = direction.sqrMagnitude > 0.1f;
         animator.SetBool("isRunning", isRunning);
-        FindObjectOfType<AudioManager>().Play("PetRun"); // Play pet run sound
+        SFXManager.instance.PlaySFXClip(companionRunClip, transform, 1f);  // Play pet run sound
 
         rb.velocity = Vector2.SmoothDamp(rb.velocity, force, ref currentVelocity, 0.5f);
         rb.AddForce(force);

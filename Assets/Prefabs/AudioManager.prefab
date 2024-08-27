@@ -9,7 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 579699949666176952}
-  - component: {fileID: 8217767188532078412}
+  - component: {fileID: 130574282053032095}
+  - component: {fileID: 336038421332770597}
+  - component: {fileID: 8973690578593577427}
+  - component: {fileID: 1728260484884763404}
+  - component: {fileID: 2554953471543994745}
+  - component: {fileID: 4508676704230736830}
+  - component: {fileID: 1845347127394407172}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -32,7 +38,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8217767188532078412
+--- !u!114 &130574282053032095
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,126 +47,163 @@ MonoBehaviour:
   m_GameObject: {fileID: 6487442327450822786}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cbd37bce9befd641a588e2829870f21, type: 3}
+  m_Script: {fileID: 11500000, guid: 99a4df220aeb512419fb7dee3f494cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: PlayerRun
-    clip: {fileID: 8300000, guid: bcf4ca49f470ebf4693e560647aeba54, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
-  - name: PlayerDirtChainJump
-    clip: {fileID: 8300000, guid: 5e8467b8cfd480444800769c5af3cff4, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
-  - name: PlayerDirtChainLand
-    clip: {fileID: 8300000, guid: b540967587c202d47afb25926abf70ff, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
-  - name: WallSlide
-    clip: {fileID: 8300000, guid: bc36a80e3f94e1c4ea67c148c2427406, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
-  - name: PlayerRoll
-    clip: {fileID: 8300000, guid: 0ea5e45935400364596cf1d35ac43a3d, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
-  - name: PlayerHurt
-    clip: {fileID: 8300000, guid: 330cfaf39f81af943a7d3456858d7902, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
-  - name: PlayerDeath1
-    clip: {fileID: 8300000, guid: 76d6f8c0c8993f841bf47a17d5151aa5, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
-  - name: SwingSword01
-    clip: {fileID: 8300000, guid: 4f7df9c4aaea42c4eb756d26398dbe69, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
-  - name: PlayerShieldDraw
-    clip: {fileID: 8300000, guid: 384779a5bede4d640ab1170754c8d55c, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
-  - name: TeleportIn
-    clip: {fileID: 8300000, guid: 5f876703fbe75be4e8f6f2a6d270fbec, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
-  - name: PetRun
-    clip: {fileID: 8300000, guid: 883bb1c470dc6ed40b22077b163f7d68, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
-  - name: PetTamed
-    clip: {fileID: 8300000, guid: 373df3e50f39f88428d7afe663f7c277, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
-  - name: PetGrowl
-    clip: {fileID: 8300000, guid: 1d0e2861a888fae4cbc8f794036fa4c1, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    isMusic: 0
-    source: {fileID: 0}
   - name: Pixel 1
     clip: {fileID: 8300000, guid: 2ccc481475ec7e54c83a6db01256dace, type: 3}
-    volume: 0.056
+    volume: 1
     pitch: 1
     loop: 0
-    isMusic: 1
-    source: {fileID: 0}
-  - name: Pixel 11
-    clip: {fileID: 8300000, guid: 16c8601e63bd1dd42aba4c5cf4be477e, type: 3}
-    volume: 0.226
-    pitch: 1
-    loop: 1
     isMusic: 1
     source: {fileID: 0}
   - name: Pixel 2
     clip: {fileID: 8300000, guid: f3775a89bfe330d4aa0739f3da64aacd, type: 3}
-    volume: 0.226
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 1
+    source: {fileID: 0}
+  - name: Pixel 3
+    clip: {fileID: 8300000, guid: 134ac98df77a4554d812339ff872836f, type: 3}
+    volume: 1
     pitch: 1
     loop: 0
     isMusic: 1
     source: {fileID: 0}
   - name: Pixel 4
     clip: {fileID: 8300000, guid: 3ae6ac071f570bc4ca7bcfbc3beb5d1a, type: 3}
-    volume: 0.226
+    volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     isMusic: 1
     source: {fileID: 0}
+  - name: Pixel 5
+    clip: {fileID: 8300000, guid: f4e2ef7296b4bcb4d90b242b913d1516, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 1
+    source: {fileID: 0}
+  - name: Pixel 6
+    clip: {fileID: 8300000, guid: 3c7af41e066478c448e983dba58bfe21, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 1
+    source: {fileID: 0}
+  - name: Pixel 7
+    clip: {fileID: 8300000, guid: 28afeabfad947e24582c9cab47bf7599, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 1
+    source: {fileID: 0}
+  - name: Pixel 8
+    clip: {fileID: 8300000, guid: c31ad8ab40e8cbc449375321cea49da8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 1
+    source: {fileID: 0}
+  - name: Pixel 9
+    clip: {fileID: 8300000, guid: c20f138ddbc24964390fe3edb21383bb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 1
+    source: {fileID: 0}
+  - name: Pixel 10
+    clip: {fileID: 8300000, guid: 9e4206ce93236bc4da5754f6cbc7a622, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 1
+    source: {fileID: 0}
+  - name: Pixel 11
+    clip: {fileID: 8300000, guid: 16c8601e63bd1dd42aba4c5cf4be477e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 1
+    source: {fileID: 0}
+  - name: Pixel 12
+    clip: {fileID: 8300000, guid: dd8041f40204bdb46a2894173ddbe56d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    isMusic: 1
+    source: {fileID: 0}
+--- !u!114 &336038421332770597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487442327450822786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9697359d92a685441b3c957282e350cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8973690578593577427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487442327450822786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b7aa07953eeb9b4e9157125595aeb48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1728260484884763404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487442327450822786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bac7d40769dbe43ad00c38ed619f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2554953471543994745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487442327450822786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9aad86529ed2a4cb6c70ae5740ff92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4508676704230736830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487442327450822786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e9cfed60787cf4f970c4cec648acce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1845347127394407172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487442327450822786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa4197853b53eb4a818975b0cf2e0d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

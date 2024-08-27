@@ -8,6 +8,7 @@ public class FinishPoint : MonoBehaviour
     [SerializeField] float interactionDistance = 2f; // Distance at which the message will be displayed
     [SerializeField] KeyCode interactionKey = KeyCode.F; // Key to press for interaction
     [SerializeField] GameObject teleportCanvas; // Reference to the canvas displaying the message
+    [SerializeField] private AudioClip teleportInClip;
 
     private bool isPlayerInRange = false;
 
@@ -18,7 +19,7 @@ public class FinishPoint : MonoBehaviour
             if (goNextLevel)
             {
                 SceneController.instance.NextLevel();
-                FindObjectOfType<AudioManager>().Play("TeleportIn");    // Play the teleportIn sound
+                SFXManager.instance.PlaySFXClip(teleportInClip, transform, 1f);    // Play the teleportIn sound
             }
             else
             {
