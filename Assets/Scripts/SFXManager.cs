@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SFXManager : MonoBehaviour
@@ -16,37 +14,36 @@ public class SFXManager : MonoBehaviour
         }
     }
 
-    public void PlaySFXClip(AudioClip audioClip, Transform spawnTransform, float volume)
+    public AudioSource PlaySFXClip(AudioClip audioClip, Transform spawnTransform, float volume, bool loop = false)
     {
         AudioSource audioSource = Instantiate(soundSFXObject, spawnTransform.position, Quaternion.identity);
-
         audioSource.clip = audioClip;
-
         audioSource.volume = volume;
+        audioSource.loop = loop;
 
         audioSource.Play();
 
-        float cliplenght = audioSource.clip.length;
+        if (!loop)
+        {
+            float clipLength = audioSource.clip.length;
+            Destroy(audioSource.gameObject, clipLength);
+        }
 
-        Destroy(audioSource.gameObject, cliplenght);
+        return audioSource;
+    }
+
+    public void StopSFXClip(AudioSource audioSource)
+    {
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+            Destroy(audioSource.gameObject); // Clean up the AudioSource object
+        }
     }
 
     public void PlayRandomSFXClip(AudioClip[] audioClip, Transform spawnTransform, float volume)
     {
         int rand = Random.Range(0, audioClip.Length);
-
-        AudioSource audioSource = Instantiate(soundSFXObject, spawnTransform.position, Quaternion.identity);
-
-        audioSource.clip = audioClip[rand];
-
-        audioSource.volume = volume;
-
-        audioSource.Play();
-
-        float cliplenght = audioSource.clip.length;
-
-        Destroy(audioSource.gameObject, cliplenght);
+        PlaySFXClip(audioClip[rand], spawnTransform, volume);
     }
-
-
 }

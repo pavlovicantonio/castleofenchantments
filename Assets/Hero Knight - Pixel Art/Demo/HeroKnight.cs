@@ -36,6 +36,7 @@ public class HeroKnight : MonoBehaviour
     private float m_rollCurrentTime;
 
     private bool isMoving = false;
+    private AudioSource runAudioSource;
 
     void Start()
     {
@@ -169,8 +170,10 @@ public class HeroKnight : MonoBehaviour
             if (!isMoving)
             {
                 isMoving = true;
-                SFXManager.instance.PlaySFXClip(heroRunClip, transform, 1f); // Play run sound
-
+                if (runAudioSource == null)
+                {
+                    runAudioSource = SFXManager.instance.PlaySFXClip(heroRunClip, transform, 1f, true); // Play run sound and loop it
+                }
             }
         }
         else
@@ -182,8 +185,11 @@ public class HeroKnight : MonoBehaviour
                 if (isMoving)
                 {
                     isMoving = false;
-                    SFXManager.instance.PlaySFXClip(heroRunClip, transform, 1f);   // Stop run sound
-
+                    if (runAudioSource != null)
+                    {
+                        SFXManager.instance.StopSFXClip(runAudioSource); // Stop run sound
+                        runAudioSource = null;
+                    }
                 }
             }
         }
