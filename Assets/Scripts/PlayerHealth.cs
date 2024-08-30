@@ -6,7 +6,7 @@ public class PlayerHealth : MonoBehaviour
 {
 
     public int maxHealth = 10;
-    private int currentHealth;
+    public int currentHealth;
 
     void Start()
     {
