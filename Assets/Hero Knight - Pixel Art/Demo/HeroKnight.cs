@@ -7,6 +7,15 @@ public class HeroKnight : MonoBehaviour
     [SerializeField] float m_rollForce = 6.0f;
     [SerializeField] bool m_noBlood = false;
     [SerializeField] GameObject m_slideDust;
+    [SerializeField] private AudioClip heroJumpClip;
+    [SerializeField] private AudioClip heroRunClip;
+    [SerializeField] private AudioClip heroLandClip;
+    [SerializeField] private AudioClip heroWallSlideClip;
+    [SerializeField] private AudioClip heroDeathClip;
+    [SerializeField] private AudioClip heroHurtClip;
+    [SerializeField] private AudioClip heroSwordSwingClip;
+    [SerializeField] private AudioClip heroRollClip;
+    [SerializeField] private AudioClip heroShieldBashClip;
 
     private Animator m_animator;
     private Rigidbody2D m_body2d;
@@ -27,6 +36,7 @@ public class HeroKnight : MonoBehaviour
     private float m_rollCurrentTime;
 
     private bool isMoving = false;
+    private AudioSource runAudioSource;
 
     void Start()
     {
@@ -53,7 +63,7 @@ public class HeroKnight : MonoBehaviour
         {
             m_grounded = true;
             m_animator.SetBool("Grounded", m_grounded);
-            FindObjectOfType<AudioManager>().Play("PlayerDirtChainLand");    // Play land sound
+            SFXManager.instance.PlaySFXClip(heroLandClip, transform, 1f);    // Play land sound
 
         }
 
@@ -88,12 +98,12 @@ public class HeroKnight : MonoBehaviour
 
         if (m_isWallSliding && !isWallSlidingSoundPlaying)
         {
-            FindObjectOfType<AudioManager>().Play("WallSlide"); // Play wall slide sound
+            SFXManager.instance.PlaySFXClip(heroWallSlideClip, transform, 1f); // Play wall slide sound
             isWallSlidingSoundPlaying = true;
         }
         else if (!m_isWallSliding && isWallSlidingSoundPlaying)
         {
-            FindObjectOfType<AudioManager>().Stop("WallSlide"); // Stop wall slide sound
+            SFXManager.instance.PlaySFXClip(heroWallSlideClip, transform, 1f); // Stop wall slide sound
             isWallSlidingSoundPlaying = false;
         }
 
@@ -101,28 +111,28 @@ public class HeroKnight : MonoBehaviour
         {
             m_animator.SetBool("noBlood", m_noBlood);
             m_animator.SetTrigger("Death");
-            FindObjectOfType<AudioManager>().Play("PlayerDeath1"); //Play death sound
+            SFXManager.instance.PlaySFXClip(heroDeathClip, transform, 1f); //Play death sound
 
         }
         else if (Input.GetKeyDown("q") && !m_rolling)
         {
             m_animator.SetTrigger("Hurt");
-            FindObjectOfType<AudioManager>().Play("PlayerHurt"); // Play Hurt sound
+            SFXManager.instance.PlaySFXClip(heroHurtClip, transform, 1f); // Play Hurt sound
         }
 
         else if (Input.GetMouseButtonDown(0) && m_timeSinceAttack > 0.25f && !m_rolling)
-        {
-            m_currentAttack++;
+            {
+                m_currentAttack++;
 
-            if (m_currentAttack > 3)
-                m_currentAttack = 1;
+                if (m_currentAttack > 3)
+                    m_currentAttack = 1;
 
-            if (m_timeSinceAttack > 1.0f)
-                m_currentAttack = 1;
+                if (m_timeSinceAttack > 1.0f)
+                    m_currentAttack = 1;
 
-            m_animator.SetTrigger("Attack" + m_currentAttack);
-            m_timeSinceAttack = 0.0f;
-            FindObjectOfType<AudioManager>().Play("SwingSword01"); // Play SwingSword01 sound
+                m_animator.SetTrigger("Attack" + m_currentAttack);
+                m_timeSinceAttack = 0.0f;
+                SFXManager.instance.PlaySFXClip(heroSwordSwingClip, transform, 1f); // Play SwingSword01 sound
 
             Debug.Log("Playing sound: SwingSword01"); // Debug info
         }
@@ -130,7 +140,7 @@ public class HeroKnight : MonoBehaviour
         {
             m_animator.SetTrigger("Block");
             m_animator.SetBool("IdleBlock", true);
-            FindObjectOfType<AudioManager>().Play("PlayerShieldDraw"); // Play ShieldDraw sound
+            SFXManager.instance.PlaySFXClip(heroShieldBashClip, transform, 1f); // Play ShieldDraw sound
         }
         else if (Input.GetMouseButtonUp(1))
             m_animator.SetBool("IdleBlock", false);
@@ -139,7 +149,7 @@ public class HeroKnight : MonoBehaviour
             m_rolling = true;
             m_animator.SetTrigger("Roll");
             m_body2d.velocity = new Vector2(m_facingDirection * m_rollForce, m_body2d.velocity.y);
-            FindObjectOfType<AudioManager>().Play("PlayerRoll"); // Play Roll sound
+            SFXManager.instance.PlaySFXClip(heroRollClip, transform, 1f); // Play Roll sound
 
         }
         else if ((Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.W)) && m_grounded && !m_rolling)
@@ -150,7 +160,7 @@ public class HeroKnight : MonoBehaviour
             m_body2d.velocity = new Vector2(m_body2d.velocity.x, m_jumpForce);
             m_groundSensor.Disable(0.2f);
 
-            FindObjectOfType<AudioManager>().Play("PlayerDirtChainJump");    // Play jump sound
+            SFXManager.instance.PlaySFXClip(heroJumpClip, transform, 1f);    // Play jump sound
 
         }
         else if (Mathf.Abs(inputX) > Mathf.Epsilon)
@@ -160,8 +170,10 @@ public class HeroKnight : MonoBehaviour
             if (!isMoving)
             {
                 isMoving = true;
-                FindObjectOfType<AudioManager>().Play("PlayerRun"); // Play run sound
-
+                if (runAudioSource == null)
+                {
+                    runAudioSource = SFXManager.instance.PlaySFXClip(heroRunClip, transform, 1f, true); // Play run sound and loop it
+                }
             }
         }
         else
@@ -173,8 +185,11 @@ public class HeroKnight : MonoBehaviour
                 if (isMoving)
                 {
                     isMoving = false;
-                    FindObjectOfType<AudioManager>().Stop("PlayerRun");   // Stop run sound
-
+                    if (runAudioSource != null)
+                    {
+                        SFXManager.instance.StopSFXClip(runAudioSource); // Stop run sound
+                        runAudioSource = null;
+                    }
                 }
             }
         }

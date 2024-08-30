@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    //[SerializeField] private AudioClip mainMenuClip;
+
     public void Play()
     {
         // Stop all music before loading the next scene
-        AudioManager.instance.StopAllMusic();
+        //MusicManager.instance.PlayMusic(mainMenuClip, 1f);
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
@@ -16,7 +18,7 @@ public class MainMenu : MonoBehaviour
     public void Quit()
     {
         // Stop all music before quitting the application
-        AudioManager.instance.StopAllMusic();
+        MusicManager.instance.StopMusic();
 
         Application.Quit();
         Debug.Log("Player Has Quit The Game");
