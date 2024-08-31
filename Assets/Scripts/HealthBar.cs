@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Health : MonoBehaviour
+public class HealthBar : MonoBehaviour
 {
     public PlayerHealth playerHealth;
     public Image fillImage;
@@ -23,7 +23,7 @@ public class Health : MonoBehaviour
             fillImage.enabled = false;
         }
 
-        if(slider.value > slider.minValue && !fillImage.enabled) 
+        if (slider.value > slider.minValue && !fillImage.enabled)
         {
             fillImage.enabled = true;
         }
@@ -32,11 +32,11 @@ public class Health : MonoBehaviour
 
         if (fillValue <= slider.maxValue / 3)
         {
-            fillImage.color = Color.white; //critical condition
+            fillImage.color = Color.red; //critical condition
         }
-        else if(fillValue > slider.minValue / 3)
+        else if (fillValue > slider.minValue / 3)
         {
-            fillImage.color = Color.red;
+            fillImage.color = Color.green;
         }
 
         slider.value = fillValue;
