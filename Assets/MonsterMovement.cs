@@ -7,16 +7,25 @@ public class MonsterMovement : MonoBehaviour, IDamageable
     public Transform[] patrolPoints;
     public float moveSpeed;
     public int patrolTarget;
-    public int health = 6;
+    //public int health = 6;
+    [SerializeField] float health, maxHealth = 6f;
     public int damageAmount = 1;  // Damage dealt per interval
     public float damageInterval = 1f;  // Time between damage ticks
 
     private float lastDamageTime;
 
+    [SerializeField] FloatingHealthBar healthBar;
+
+    private void Awake()
+    {
+        healthBar = GetComponentInChildren<FloatingHealthBar>();
+    }
+
     void Start()
     {
         patrolTarget = 0;
         lastDamageTime = -damageInterval;  // Ensures immediate damage on first contact
+        healthBar.UpdateHealthBar(health, maxHealth);
     }
 
     void Update()
@@ -40,8 +49,8 @@ public class MonsterMovement : MonoBehaviour, IDamageable
     public void TakeDamage(int damage)
     {
         health -= damage;
-        Debug.Log(gameObject.name + " took damage, remaining health: " + health);
-
+        //Debug.Log(gameObject.name + " took damage, remaining health: " + health);
+        healthBar.UpdateHealthBar(health, maxHealth);
         if (health <= 0)
         {
             Die();
