@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-
     public float maxHealth = 10;
     public float currentHealth;
 
@@ -13,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
+    // Funkcija za primanje štete
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -22,9 +22,17 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    // Nova funkcija za ozdravljenje
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        // Osiguravamo da trenutni HP ne prelazi maksimalan HP
+        currentHealth = Mathf.Min(currentHealth, maxHealth);
+    }
+
     private void Die()
     {
-
+        // Možete dodati dodatne efekte smrti ovdje
         Destroy(gameObject);
     }
 }
