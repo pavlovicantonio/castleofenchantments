@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class BanditMovement : MonoBehaviour, IDamageable
 {
     public float speed = 2f;
@@ -54,6 +52,7 @@ public class BanditMovement : MonoBehaviour, IDamageable
         if (stepCounter <= 0)
         {
             direction *= -1;
+            Flip();
             stepCounter = stepLength;
         }
     }
@@ -62,6 +61,25 @@ public class BanditMovement : MonoBehaviour, IDamageable
     {
         float step = speed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, player.position, step);
+
+        // Okretanje Bandita prema igraču
+        if (player.position.x > transform.position.x && direction < 0)
+        {
+            direction = 1;
+            Flip();
+        }
+        else if (player.position.x < transform.position.x && direction > 0)
+        {
+            direction = -1;
+            Flip();
+        }
+    }
+
+    private void Flip()
+    {
+        Vector3 newScale = transform.localScale;
+        newScale.x *= -1;
+        transform.localScale = newScale;
     }
 
     public void TakeDamage(int damage)
