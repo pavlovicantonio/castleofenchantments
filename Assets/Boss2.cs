@@ -1,65 +1,88 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class Boss2 : MonoBehaviour, IDamageable
 {
-    public float moveSpeed = 2f;
-    public float patrolDistance = 3f;
-    public float attackRange = 2f;
-    public int health = 6;
+    public float speed = 2f;
+    public float stepLength = 3f;
+    public float attackRange = 1.5f;
+    public Transform player;
 
-    private Transform playerTransform;
-    private Vector2 startPosition;
-    private Vector2 moveDirection = Vector2.right;
-    private float moveTimer;
+    [SerializeField] float health, maxHealth = 10f; // Boss ima više zdravlja
+    public int damageAmount = 2;  // Boss nanosi više štete
+    public float damageInterval = 1.5f;  // Boss napada malo sporije
+
+    private float stepCounter;
+    private int direction = 1;
+    private float nextFlipTime;
+    private float flipInterval = 3f;
+    private bool isAttacking = false;
+    private float lastDamageTime;
+
+    [SerializeField] FloatingHealthBar healthBar;  // Zdravstvena traka za bossa
+
+    private SpriteRenderer spriteRenderer;
+
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        healthBar = GetComponentInChildren<FloatingHealthBar>();
+    }
 
     void Start()
     {
-        startPosition = transform.position;
-        playerTransform = GameObject.FindWithTag("Player").transform;
+        stepCounter = stepLength;
+        nextFlipTime = Time.time + flipInterval;
+        lastDamageTime = -damageInterval;
+        health = maxHealth; // Postavi poèetno zdravlje
+        healthBar.UpdateHealthBar(health, maxHealth);
     }
 
     void Update()
     {
-        if (health <= 0) return;
-
-        float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
-
-        if (distanceToPlayer <= attackRange)
+        if (!isAttacking)
         {
-            AttackPlayer();
+            Move();
         }
-        else
+
+        // Održavaj zdravstvenu traku stabilnom
+        if (healthBar != null)
         {
-            Patrol();
+            healthBar.transform.rotation = Quaternion.identity;
         }
     }
 
-    void Patrol()
+    private void Move()
     {
-        if (moveTimer >= patrolDistance)
-        {
-            moveDirection *= -1;
-            moveTimer = 0;
-            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
-        }
+        transform.Translate(Vector2.right * speed * direction * Time.deltaTime);
+        stepCounter -= speed * Time.deltaTime;
 
-        transform.Translate(moveDirection * moveSpeed * Time.deltaTime, Space.World);
-        moveTimer += Time.deltaTime;
+        if (Time.time >= nextFlipTime)
+        {
+            direction *= -1; // Promijeni smjer
+            Flip();          // Okreni sprite
+            nextFlipTime += flipInterval;
+        }
     }
 
-    void AttackPlayer()
+    private void Flip()
     {
-        Debug.Log("Attacking Player!");
+        if (direction > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (direction < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
     }
 
     public void TakeDamage(int damage)
     {
         health -= damage;
+        Debug.Log(gameObject.name + " took damage, remaining health: " + health);
+        healthBar.UpdateHealthBar(health, maxHealth);
         if (health <= 0)
         {
             Die();
@@ -68,7 +91,36 @@ public class Boss2 : MonoBehaviour, IDamageable
 
     private void Die()
     {
-        Debug.Log("Boss is dead!");
+        Debug.Log(gameObject.name + " is dead.");
         Destroy(gameObject);
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            if (Time.time >= lastDamageTime + damageInterval)
+            {
+                var healthComponent = collision.GetComponent<PlayerHealth>();
+                if (healthComponent != null)
+                {
+                    healthComponent.TakeDamage(damageAmount);
+                    lastDamageTime = Time.time;
+                }
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            var healthComponent = collision.GetComponent<PlayerHealth>();
+            if (healthComponent != null)
+            {
+                healthComponent.TakeDamage(damageAmount);
+                lastDamageTime = Time.time;
+            }
+        }
     }
 }

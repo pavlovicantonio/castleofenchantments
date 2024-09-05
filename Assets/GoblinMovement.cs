@@ -8,30 +8,47 @@ public class GoblinMovement : MonoBehaviour, IDamageable
     public float stepLength = 2f;
     public float attackRange = 1f;
     public Transform player;
-    public int health = 6;
-    public int damageAmount = 1;  // Koliko štete goblin nanosi igraču
-    public float damageInterval = 1f;  // Koliko često može nanijeti štetu igraču
+
+    [SerializeField] float health, maxHealth = 6f;
+    public int damageAmount = 1;
+    public float damageInterval = 1f;
 
     private float stepCounter;
     private int direction = 1;
     private float nextFlipTime;
     private float flipInterval = 4f;
     private bool isAttacking = false;
-    private float lastDamageTime;  // Kada je goblin zadnji put nanio štetu
+    private float lastDamageTime;
+
+    [SerializeField] FloatingHealthBar healthBar;
+
+    private SpriteRenderer spriteRenderer;
+
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer component
+        healthBar = GetComponentInChildren<FloatingHealthBar>();
+    }
 
     void Start()
     {
         stepCounter = stepLength;
         nextFlipTime = Time.time + flipInterval;
-        lastDamageTime = -damageInterval;  // Omogućuje trenutni napad na početku
+        lastDamageTime = -damageInterval;
+        healthBar.UpdateHealthBar(health, maxHealth);
     }
 
     void Update()
     {
-        DetectAndAttackPlayer();
         if (!isAttacking)
         {
             Move();
+        }
+
+        // Keep the health bar's rotation fixed
+        if (healthBar != null)
+        {
+            healthBar.transform.rotation = Quaternion.identity;
         }
     }
 
@@ -42,51 +59,21 @@ public class GoblinMovement : MonoBehaviour, IDamageable
 
         if (Time.time >= nextFlipTime)
         {
-            Flip();
+            direction *= -1; // Change direction
+            Flip();          // Update the sprite orientation
             nextFlipTime += flipInterval;
         }
     }
 
-    private void DetectAndAttackPlayer()
+    private void Flip()
     {
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        if (distanceToPlayer < attackRange)
+        if (direction > 0)
         {
-            Debug.Log("Attack the player!");
-            isAttacking = true;
-            AttackPlayer();
+            spriteRenderer.flipX = false;
         }
-        else
+        else if (direction < 0)
         {
-            isAttacking = false;
-        }
-    }
-
-    private void AttackPlayer()
-    {
-        // Provjera ako može nanijeti štetu
-        if (Time.time >= lastDamageTime + damageInterval)
-        {
-            Vector3 directionToPlayer = (player.position - transform.position).normalized;
-            transform.Translate(directionToPlayer * speed * Time.deltaTime);
-
-            // Promjena smjera ovisno o poziciji igrača
-            if (player.position.x > transform.position.x && direction != 1)
-            {
-                Flip();
-            }
-            else if (player.position.x < transform.position.x && direction != -1)
-            {
-                Flip();
-            }
-
-            // Pronađi komponentu zdravlja igrača i nanesi štetu
-            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(damageAmount);
-                lastDamageTime = Time.time;  // Postavi zadnji napad na sada
-            }
+            spriteRenderer.flipX = true;
         }
     }
 
@@ -94,6 +81,7 @@ public class GoblinMovement : MonoBehaviour, IDamageable
     {
         health -= damage;
         Debug.Log(gameObject.name + " took damage, remaining health: " + health);
+        healthBar.UpdateHealthBar(health, maxHealth);
         if (health <= 0)
         {
             Die();
@@ -106,18 +94,9 @@ public class GoblinMovement : MonoBehaviour, IDamageable
         Destroy(gameObject);
     }
 
-    private void Flip()
-    {
-        direction *= -1;
-        Vector2 scaler = transform.localScale;
-        scaler.x *= -1;
-        transform.localScale = scaler;
-    }
-
     private void OnTriggerStay2D(Collider2D collision)
     {
-        // Ako je igrač unutar napada, nanesi mu štetu
-        if (collision.CompareTag("Player"))
+        if (collision.tag == "Player")
         {
             if (Time.time >= lastDamageTime + damageInterval)
             {
@@ -127,6 +106,19 @@ public class GoblinMovement : MonoBehaviour, IDamageable
                     healthComponent.TakeDamage(damageAmount);
                     lastDamageTime = Time.time;
                 }
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            var healthComponent = collision.GetComponent<PlayerHealth>();
+            if (healthComponent != null)
+            {
+                healthComponent.TakeDamage(damageAmount);
+                lastDamageTime = Time.time;
             }
         }
     }
