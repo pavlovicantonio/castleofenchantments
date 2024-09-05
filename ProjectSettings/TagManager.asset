@@ -21,7 +21,7 @@ TagManager:
   - Player
   - Companion
   - groundLayer
-  - 
+  - vfxfront
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: monster
     uniqueID: 1630499343
+    locked: 0
+  - name: vfxfront
+    uniqueID: 1544323975
     locked: 0
