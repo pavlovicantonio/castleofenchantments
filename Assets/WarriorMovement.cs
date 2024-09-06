@@ -67,6 +67,7 @@ public class WarriorMovement : MonoBehaviour, IDamageable
 
     private void Flip()
     {
+        Debug.Log("Flipping sprite");
         if (direction > 0)
         {
             spriteRenderer.flipX = false;
@@ -74,7 +75,7 @@ public class WarriorMovement : MonoBehaviour, IDamageable
         else if (direction < 0)
         {
             spriteRenderer.flipX = true;
-        }
+     }
     }
 
     public void TakeDamage(int damage)
