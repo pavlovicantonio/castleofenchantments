@@ -24,7 +24,8 @@ Igra također pruža intenzivno iskustvo istraživanja ukletog dvorca, gdje igra
 - [izv. prof. dr. sc. Tihomir Orehovački ](tihomir.orehovacki@unipu.hr)
 - [mag. inf. Robert Šajina ](robert.sajina@unipu.hr)
 
-### Izgled igre
+### Snimke zaslona
 
-![Im1]()
+Glavni izbornik
+![Main Menu](https://github.com/pavlovicantonio/castleofenchantments/blob/main/screenshots/COE-MainMenu.png)
 ---
