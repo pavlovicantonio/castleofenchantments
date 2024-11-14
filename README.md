@@ -27,5 +27,20 @@ Igra također pruža intenzivno iskustvo istraživanja ukletog dvorca, gdje igra
 ### Snimke zaslona
 
 Glavni izbornik
-
 ![Main Menu](https://github.com/pavlovicantonio/castleofenchantments/blob/main/screenshots/COE-MainMenu.png)
+
+Selo
+![Village](https://github.com/pavlovicantonio/castleofenchantments/blob/main/screenshots/COE-Village.png)
+
+![Sunflowers](https://github.com/pavlovicantonio/castleofenchantments/blob/main/screenshots/COE-Sunflowers.png)
+
+Neprijatelji
+![Enemy](https://github.com/pavlovicantonio/castleofenchantments/blob/main/screenshots/COE-Enemy.png)
+
+![Enemy2](https://github.com/pavlovicantonio/castleofenchantments/blob/main/screenshots/COE-Enemy2.png)
+
+Pripitomljavanje
+![Taming](https://github.com/pavlovicantonio/castleofenchantments/blob/main/screenshots/COE-Taming.png)
+
+Planine
+![Mountains](https://github.com/pavlovicantonio/castleofenchantments/blob/main/screenshots/COE-Mountains.png)
