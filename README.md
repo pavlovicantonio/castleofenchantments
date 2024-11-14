@@ -27,5 +27,5 @@ Igra također pruža intenzivno iskustvo istraživanja ukletog dvorca, gdje igra
 ### Snimke zaslona
 
 Glavni izbornik
+
 ![Main Menu](https://github.com/pavlovicantonio/castleofenchantments/blob/main/screenshots/COE-MainMenu.png)
----
